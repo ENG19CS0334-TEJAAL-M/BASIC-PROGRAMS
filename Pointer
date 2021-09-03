@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include<bits/stdc++.h>
+
+void update(int *a,int *b) {
+    // Complete this function   
+    int w,r;
+    w=*a;
+     *a=*a+*b;
+     *b=abs((w)-(*b));
+     
+}
+
+int main() {
+    int a, b,*pa,*pb ;
+    pa= &a;
+    pb= &b;
+    
+    scanf("%d %d", &a, &b);
+    update(pa, pb);
+    printf("%d\n%d", a, b);
+
+    return 0;
+}
