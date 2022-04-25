@@ -3,9 +3,10 @@
 int main(void) {
 	
 	
-	int n[100],i,even=0,odd=0,t;
+	int i,even=0,odd=0,t;
 
 	scanf("%d\n",&t);
+	int n[t];
 	for(i=0;i<t;i++)
 	{
 	    scanf("%d ",&n[i]);
